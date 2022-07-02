@@ -1,2 +1,2 @@
-# pic-generator
+# pic generator
 Binary image generator
