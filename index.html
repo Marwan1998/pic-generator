@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Generator</title>
+    <style>
+        .b{
+            background-color: black;
+        }
+        .r{
+            background-color: red;
+        }
+        .s{
+            width: 20px;
+            height: 20px;
+        }
+        .row{
+            display: inline-flex;
+        }
+        .grid{
+            display: grid;
+        }
+        .center{
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- style="background-color: red; width:100px; height: 100px;" -->
+
+    <div id="container" class="center grid">
+
+
+    </div>
+
+
+    <script>
+
+        let container = document.getElementById("container");
+        
+        let rows = 10, cols = 10;
+        for (let i = 0; i < rows; i++) {
+            let row = document.createElement('div');
+            row.className = "row";
+            for (let j = 0; j < cols; j++) {
+                let r = document.createElement('div');
+                let b = document.createElement('div');
+                r.className = "s r";
+                b.className = "s b";
+                row.appendChild(r);
+                row.appendChild(b);
+            }
+            container.appendChild(row);
+        }
+    
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- 
+
+
+            <div class="row">
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+        </div>
+        <div class="row">
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+        </div>
+        <div class="row">
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+        </div>
+        <div class="row">
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+        </div>
+        <div class="row">
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+        </div>
+        <div class="row">
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+        </div>
+        <div class="row">
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+        </div>
+        <div class="row">
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+        </div>
+        <div class="row">
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+        </div>
+        <div class="row">
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+            <div class="s r"></div>
+            <div class="s b"></div>
+        </div>
+
+
+ -->
