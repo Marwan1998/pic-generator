@@ -32,33 +32,37 @@
 
 <body>
 
-    <!-- style="background-color: red; width:100px; height: 100px;" -->
+    <div id="container" class="center grid"></div>
 
-    <div id="container" class="center grid">
-
-
-    </div>
 
 
     <script>
-
+        const rows = 30, cols = 64; // Size Of the Image
+        let i = 1, j = 1, flag = true;
         let container = document.getElementById("container");
-        
-        let rows = 10, cols = 10;
-        for (let i = 0; i < rows; i++) {
+        for (i = 1; i <= rows; i++) {
             let row = document.createElement('div');
             row.className = "row";
-            for (let j = 0; j < cols; j++) {
-                let r = document.createElement('div');
-                let b = document.createElement('div');
+            let counter = cols - 1;
+            for (j = 1; j <= cols; j++) {
+                let id = (cols*i) - counter--;
+                let r = document.createElement('div'), b = document.createElement('div');
                 r.className = "s r";
                 b.className = "s b";
-                row.appendChild(r);
-                row.appendChild(b);
+
+                flag ? (row.appendChild(r), r.id = id) : (row.appendChild(b), r.id = id);
+                flag = !flag; // reverse flag value
             }
+            flag = !flag;
             container.appendChild(row);
         }
-    
+
+    </script>
+
+    <script>
+        //Random
+
+
     </script>
 
 </body>
